@@ -22,6 +22,7 @@
     <io.rest.assured.version>5.3.0</io.rest.assured.version>
     <slf4j-simple.version>1.7.32</slf4j-simple.version>
     <jackson.version>2.14.1</jackson.version>
+    <retrofit2.version>2.9.0</retrofit2.version>
   </properties>
 
   <dependencies>
@@ -58,11 +59,7 @@
       <version>${io.rest.assured.version}</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>${slf4j-simple.version}</version>
-    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -87,6 +84,24 @@
       <groupId>com.jayway.jsonpath</groupId>
       <artifactId>json-path</artifactId>
       <version>2.7.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-jackson -->
+    <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
+      <artifactId>converter-jackson</artifactId>
+      <version>${retrofit2.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/logging-interceptor -->
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>logging-interceptor</artifactId>
+      <version>5.0.0-alpha.11</version>
     </dependency>
   </dependencies>
 
